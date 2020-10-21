@@ -11,7 +11,38 @@
 		1651DA0D2540E10900C6E149 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651DA0C2540E10900C6E149 /* ContentView.swift */; };
 		1651DA0F2540E10A00C6E149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1651DA0E2540E10A00C6E149 /* Assets.xcassets */; };
 		1651DA122540E10A00C6E149 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1651DA112540E10A00C6E149 /* Preview Assets.xcassets */; };
+		1651DA212540E45000C6E149 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1651DA202540E45000C6E149 /* WidgetKit.framework */; };
+		1651DA232540E45000C6E149 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1651DA222540E45000C6E149 /* SwiftUI.framework */; };
+		1651DA262540E45000C6E149 /* UnosquareWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651DA252540E45000C6E149 /* UnosquareWidget.swift */; };
+		1651DA292540E45200C6E149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1651DA282540E45200C6E149 /* Assets.xcassets */; };
+		1651DA2B2540E45200C6E149 /* UnosquareWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1651DA272540E45000C6E149 /* UnosquareWidget.intentdefinition */; };
+		1651DA2C2540E45200C6E149 /* UnosquareWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1651DA272540E45000C6E149 /* UnosquareWidget.intentdefinition */; };
+		1651DA2F2540E45200C6E149 /* UnosquareWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1651DA1E2540E45000C6E149 /* UnosquareWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1651DA2D2540E45200C6E149 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1651D9FF2540E10900C6E149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1651DA1D2540E45000C6E149;
+			remoteInfo = UnosquareWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1651DA332540E45200C6E149 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1651DA2F2540E45200C6E149 /* UnosquareWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1651DA072540E10900C6E149 /* iOSWidgetPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWidgetPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,13 @@
 		1651DA0E2540E10A00C6E149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1651DA112540E10A00C6E149 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1651DA132540E10A00C6E149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1651DA1E2540E45000C6E149 /* UnosquareWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UnosquareWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1651DA202540E45000C6E149 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1651DA222540E45000C6E149 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1651DA252540E45000C6E149 /* UnosquareWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnosquareWidget.swift; sourceTree = "<group>"; };
+		1651DA272540E45000C6E149 /* UnosquareWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = UnosquareWidget.intentdefinition; sourceTree = "<group>"; };
+		1651DA282540E45200C6E149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1651DA2A2540E45200C6E149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +68,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1651DA1B2540E45000C6E149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1651DA232540E45000C6E149 /* SwiftUI.framework in Frameworks */,
+				1651DA212540E45000C6E149 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				1651DA092540E10900C6E149 /* iOSWidgetPOC */,
+				1651DA242540E45000C6E149 /* UnosquareWidget */,
+				1651DA1F2540E45000C6E149 /* Frameworks */,
 				1651DA082540E10900C6E149 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1651DA072540E10900C6E149 /* iOSWidgetPOC.app */,
+				1651DA1E2540E45000C6E149 /* UnosquareWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +119,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1651DA1F2540E45000C6E149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1651DA202540E45000C6E149 /* WidgetKit.framework */,
+				1651DA222540E45000C6E149 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1651DA242540E45000C6E149 /* UnosquareWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1651DA252540E45000C6E149 /* UnosquareWidget.swift */,
+				1651DA272540E45000C6E149 /* UnosquareWidget.intentdefinition */,
+				1651DA282540E45200C6E149 /* Assets.xcassets */,
+				1651DA2A2540E45200C6E149 /* Info.plist */,
+			);
+			path = UnosquareWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +149,34 @@
 				1651DA032540E10900C6E149 /* Sources */,
 				1651DA042540E10900C6E149 /* Frameworks */,
 				1651DA052540E10900C6E149 /* Resources */,
+				1651DA332540E45200C6E149 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1651DA2E2540E45200C6E149 /* PBXTargetDependency */,
 			);
 			name = iOSWidgetPOC;
 			productName = iOSWidgetPOC;
 			productReference = 1651DA072540E10900C6E149 /* iOSWidgetPOC.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1651DA1D2540E45000C6E149 /* UnosquareWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1651DA302540E45200C6E149 /* Build configuration list for PBXNativeTarget "UnosquareWidgetExtension" */;
+			buildPhases = (
+				1651DA1A2540E45000C6E149 /* Sources */,
+				1651DA1B2540E45000C6E149 /* Frameworks */,
+				1651DA1C2540E45000C6E149 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnosquareWidgetExtension;
+			productName = UnosquareWidgetExtension;
+			productReference = 1651DA1E2540E45000C6E149 /* UnosquareWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +188,9 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					1651DA062540E10900C6E149 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					1651DA1D2540E45000C6E149 = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
@@ -117,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				1651DA062540E10900C6E149 /* iOSWidgetPOC */,
+				1651DA1D2540E45000C6E149 /* UnosquareWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1651DA1C2540E45000C6E149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1651DA292540E45200C6E149 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,10 +241,28 @@
 			files = (
 				1651DA0D2540E10900C6E149 /* ContentView.swift in Sources */,
 				1651DA0B2540E10900C6E149 /* iOSWidgetPOCApp.swift in Sources */,
+				1651DA2C2540E45200C6E149 /* UnosquareWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1651DA1A2540E45000C6E149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1651DA2B2540E45200C6E149 /* UnosquareWidget.intentdefinition in Sources */,
+				1651DA262540E45000C6E149 /* UnosquareWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1651DA2E2540E45200C6E149 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1651DA1D2540E45000C6E149 /* UnosquareWidgetExtension */;
+			targetProxy = 1651DA2D2540E45200C6E149 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1651DA142540E10A00C6E149 /* Debug */ = {
@@ -265,6 +384,7 @@
 		1651DA172540E10A00C6E149 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +407,7 @@
 		1651DA182540E10A00C6E149 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +422,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.axos.iOSWidgetPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1651DA312540E45200C6E149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C93PUCQDNM;
+				INFOPLIST_FILE = UnosquareWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axos.iOSWidgetPOC.UnosquareWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1651DA322540E45200C6E149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C93PUCQDNM;
+				INFOPLIST_FILE = UnosquareWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axos.iOSWidgetPOC.UnosquareWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +486,15 @@
 			buildConfigurations = (
 				1651DA172540E10A00C6E149 /* Debug */,
 				1651DA182540E10A00C6E149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1651DA302540E45200C6E149 /* Build configuration list for PBXNativeTarget "UnosquareWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1651DA312540E45200C6E149 /* Debug */,
+				1651DA322540E45200C6E149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
